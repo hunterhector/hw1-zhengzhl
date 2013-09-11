@@ -25,7 +25,7 @@
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.cs.lti.zhengzhl.ComponentTop</name>
+      <name>edu.cmu.cs.lti.zhengzhl.ComponentTOP</name>
       <description>A base type that extends TOP, with 2 new features:
   1. Component Id, that indicate the source of annotation
   2. Confidence, that indicate the confidence the annotator gives</description>

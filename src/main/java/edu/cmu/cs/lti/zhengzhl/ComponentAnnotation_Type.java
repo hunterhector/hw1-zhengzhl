@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Sep 11 00:03:59 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 14:03:48 EDT 2013 */
 package edu.cmu.cs.lti.zhengzhl;
 
 import org.apache.uima.jcas.JCas;
@@ -16,7 +16,7 @@ import org.apache.uima.jcas.tcas.Annotation_Type;
 /** The base type that extends annotation. Two features are added into this type:
   1. componentId
   2. confidence
- * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:04:36 EDT 2013
  * @generated */
 public class ComponentAnnotation_Type extends Annotation_Type {
   /** @generated */

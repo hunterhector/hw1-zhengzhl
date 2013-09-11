@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Sep 11 00:03:59 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 14:04:36 EDT 2013 */
 package edu.cmu.cs.lti.zhengzhl;
 
 import org.apache.uima.jcas.JCas;
@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** A token is a language unit that mostly refers to a word, which should be produced by a tokenizer.
- * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:04:36 EDT 2013
  * @generated */
 public class Token_Type extends ComponentAnnotation_Type {
   /** @generated */

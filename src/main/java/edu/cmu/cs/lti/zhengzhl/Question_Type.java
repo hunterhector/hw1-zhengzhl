@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Sep 11 00:03:59 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 14:04:36 EDT 2013 */
 package edu.cmu.cs.lti.zhengzhl;
 
 import org.apache.uima.jcas.JCas;
@@ -9,12 +9,11 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
-
 import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** The question type refers the one single question.
- * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:04:36 EDT 2013
  * @generated */
 public class Question_Type extends ComponentAnnotation_Type {
   /** @generated */
@@ -43,9 +42,7 @@ public class Question_Type extends ComponentAnnotation_Type {
      @modifiable */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.cs.lti.zhengzhl.Question");
-
-
-
+ 
   /** @generated */
   final Feature casFeat_candidateAnswers;
   /** @generated */

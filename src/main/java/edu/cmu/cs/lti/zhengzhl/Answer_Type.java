@@ -1,5 +1,5 @@
 
-/* First created by JCasGen Wed Sep 11 00:03:59 EDT 2013 */
+/* First created by JCasGen Wed Sep 11 14:04:36 EDT 2013 */
 package edu.cmu.cs.lti.zhengzhl;
 
 import org.apache.uima.jcas.JCas;
@@ -9,12 +9,10 @@ import org.apache.uima.cas.impl.FSGenerator;
 import org.apache.uima.cas.FeatureStructure;
 import org.apache.uima.cas.impl.TypeImpl;
 import org.apache.uima.cas.Type;
-import org.apache.uima.cas.impl.FeatureImpl;
-import org.apache.uima.cas.Feature;
 import org.apache.uima.jcas.tcas.Annotation_Type;
 
 /** An answer is one possible answer for a question.
- * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
+ * Updated by JCasGen Wed Sep 11 14:04:36 EDT 2013
  * @generated */
 public class Answer_Type extends Annotation_Type {
   /** @generated */
@@ -43,24 +41,6 @@ public class Answer_Type extends Annotation_Type {
      @modifiable */
   @SuppressWarnings ("hiding")
   public final static boolean featOkTst = JCasRegistry.getFeatOkTst("edu.cmu.cs.lti.zhengzhl.Answer");
- 
-  /** @generated */
-  final Feature casFeat_score;
-  /** @generated */
-  final int     casFeatCode_score;
-  /** @generated */ 
-  public int getScore(int addr) {
-        if (featOkTst && casFeat_score == null)
-      jcas.throwFeatMissing("score", "edu.cmu.cs.lti.zhengzhl.Answer");
-    return ll_cas.ll_getRefValue(addr, casFeatCode_score);
-  }
-  /** @generated */    
-  public void setScore(int addr, int v) {
-        if (featOkTst && casFeat_score == null)
-      jcas.throwFeatMissing("score", "edu.cmu.cs.lti.zhengzhl.Answer");
-    ll_cas.ll_setRefValue(addr, casFeatCode_score, v);}
-    
-  
 
 
 
@@ -69,10 +49,6 @@ public class Answer_Type extends Annotation_Type {
   public Answer_Type(JCas jcas, Type casType) {
     super(jcas, casType);
     casImpl.getFSClassRegistry().addGeneratorForType((TypeImpl)this.casType, getFSGenerator());
-
- 
-    casFeat_score = jcas.getRequiredFeatureDE(casType, "score", "edu.cmu.cs.lti.zhengzhl.Score", featOkTst);
-    casFeatCode_score  = (null == casFeat_score) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_score).getCode();
 
   }
 }

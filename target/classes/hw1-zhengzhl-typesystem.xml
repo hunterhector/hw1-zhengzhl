@@ -72,15 +72,32 @@
       <features>
         <featureDescription>
           <name>score</name>
-          <description>score associated with this answer.</description>
+          <description>the score given to this answer by some annotator.</description>
           <rangeTypeName>edu.cmu.cs.lti.zhengzhl.Score</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
-      <name>edu.cmu.cs.lti.zhengzhl.Score</name>
-      <description>A score given to an answer by one particular annotator</description>
+      <name>edu.cmu.cs.lti.zhengzhl.EvaluatonResult</name>
+      <description>This type stores the evaluation results.</description>
       <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>metricName</name>
+          <description>the name of the metric used.</description>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+        <featureDescription>
+          <name>result</name>
+          <description>a numeric value represent evaluation result.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.lti.zhengzhl.Score</name>
+      <description>The score given to answer by some annotator</description>
+      <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentTOP</supertypeName>
       <features>
         <featureDescription>
           <name>score</name>
