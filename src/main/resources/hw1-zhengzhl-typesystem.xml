@@ -80,7 +80,7 @@
     <typeDescription>
       <name>edu.cmu.cs.lti.zhengzhl.EvaluatonResult</name>
       <description>This type stores the evaluation results.</description>
-      <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentAnnotation</supertypeName>
+      <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentTOP</supertypeName>
       <features>
         <featureDescription>
           <name>metricName</name>
