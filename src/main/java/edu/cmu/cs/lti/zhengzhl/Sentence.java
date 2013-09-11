@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** A sentence refers to a natural sentence in the text.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * XML source: /Users/hector/Documents/homeworks/11791/hw1-zhengzhl/src/main/resources/hw1-zhengzhl-typesystem.xml
  * @generated */
 public class Sentence extends ComponentAnnotation {

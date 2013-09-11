@@ -16,7 +16,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 /** A base type that extends TOP, with 2 new features:
   1. Component Id, that indicate the source of annotation
   2. Confidence, that indicate the confidence the annotator gives
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * @generated */
 public class ComponentTop_Type extends TOP_Type {
   /** @generated */

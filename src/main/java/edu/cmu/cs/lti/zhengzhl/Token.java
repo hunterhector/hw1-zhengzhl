@@ -10,7 +10,7 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** A token is a language unit that mostly refers to a word, which should be produced by a tokenizer.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * XML source: /Users/hector/Documents/homeworks/11791/hw1-zhengzhl/src/main/resources/hw1-zhengzhl-typesystem.xml
  * @generated */
 public class Token extends ComponentAnnotation {
@@ -113,6 +113,24 @@ public class Token extends ComponentAnnotation {
     if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_stem == null)
       jcasType.jcas.throwFeatMissing("stem", "edu.cmu.cs.lti.zhengzhl.Token");
     jcasType.ll_cas.ll_setStringValue(addr, ((Token_Type)jcasType).casFeatCode_stem, v);}    
+   
+    
+  //*--------------*
+  //* Feature: tf
+
+  /** getter for tf - gets term frequency of the token in the document
+   * @generated */
+  public int getTf() {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_tf == null)
+      jcasType.jcas.throwFeatMissing("tf", "edu.cmu.cs.lti.zhengzhl.Token");
+    return jcasType.ll_cas.ll_getIntValue(addr, ((Token_Type)jcasType).casFeatCode_tf);}
+    
+  /** setter for tf - sets term frequency of the token in the document 
+   * @generated */
+  public void setTf(int v) {
+    if (Token_Type.featOkTst && ((Token_Type)jcasType).casFeat_tf == null)
+      jcasType.jcas.throwFeatMissing("tf", "edu.cmu.cs.lti.zhengzhl.Token");
+    jcasType.ll_cas.ll_setIntValue(addr, ((Token_Type)jcasType).casFeatCode_tf, v);}    
   }
 
     

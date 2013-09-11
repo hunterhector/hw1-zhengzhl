@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** NGram is a language unit that span over N tokens, where N is a integer larger or equal than 0.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * @generated */
 public class NGram_Type extends ComponentAnnotation_Type {
   /** @generated */

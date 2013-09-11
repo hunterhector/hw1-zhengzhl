@@ -9,8 +9,11 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
+import org.apache.uima.jcas.cas.FSList;
+
+
 /** The question type refers the one single question.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * XML source: /Users/hector/Documents/homeworks/11791/hw1-zhengzhl/src/main/resources/hw1-zhengzhl-typesystem.xml
  * @generated */
 public class Question extends ComponentAnnotation {
@@ -59,6 +62,22 @@ public class Question extends ComponentAnnotation {
   @generated modifiable */
   private void readObject() {/*default - does nothing empty block */}
      
-}
+  //*--------------*
+  //* Feature: candidateAnswers
+
+  /** getter for candidateAnswers - gets the candidate answers of this question
+   * @generated */
+  public FSList getCandidateAnswers() {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_candidateAnswers == null)
+      jcasType.jcas.throwFeatMissing("candidateAnswers", "edu.cmu.cs.lti.zhengzhl.Question");
+    return (FSList)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Question_Type)jcasType).casFeatCode_candidateAnswers)));}
+    
+  /** setter for candidateAnswers - sets the candidate answers of this question 
+   * @generated */
+  public void setCandidateAnswers(FSList v) {
+    if (Question_Type.featOkTst && ((Question_Type)jcasType).casFeat_candidateAnswers == null)
+      jcasType.jcas.throwFeatMissing("candidateAnswers", "edu.cmu.cs.lti.zhengzhl.Question");
+    jcasType.ll_cas.ll_setRefValue(addr, ((Question_Type)jcasType).casFeatCode_candidateAnswers, jcasType.ll_cas.ll_getFSRef(v));}    
+  }
 
     

@@ -28,6 +28,11 @@
           <description>the stemmed for of the token.</description>
           <rangeTypeName>uima.cas.String</rangeTypeName>
         </featureDescription>
+        <featureDescription>
+          <name>tf</name>
+          <description>term frequency of the token in the document</description>
+          <rangeTypeName>uima.cas.Integer</rangeTypeName>
+        </featureDescription>
       </features>
     </typeDescription>
     <typeDescription>
@@ -51,6 +56,14 @@
       <name>edu.cmu.cs.lti.zhengzhl.Question</name>
       <description>The question type refers the one single question.</description>
       <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentAnnotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>candidateAnswers</name>
+          <description>the candidate answers of this question</description>
+          <rangeTypeName>uima.cas.FSList</rangeTypeName>
+          <elementType>edu.cmu.cs.lti.zhengzhl.Answer</elementType>
+        </featureDescription>
+      </features>
     </typeDescription>
     <typeDescription>
       <name>edu.cmu.cs.lti.zhengzhl.Answer</name>
@@ -60,12 +73,19 @@
         <featureDescription>
           <name>score</name>
           <description>score associated with this answer.</description>
-          <rangeTypeName>uima.cas.Double</rangeTypeName>
+          <rangeTypeName>edu.cmu.cs.lti.zhengzhl.Score</rangeTypeName>
         </featureDescription>
+      </features>
+    </typeDescription>
+    <typeDescription>
+      <name>edu.cmu.cs.lti.zhengzhl.Score</name>
+      <description>A score given to an answer by one particular annotator</description>
+      <supertypeName>edu.cmu.cs.lti.zhengzhl.ComponentAnnotation</supertypeName>
+      <features>
         <featureDescription>
-          <name>isCorrect</name>
-          <description>the boolean varaible indicating whether the answer is correct.</description>
-          <rangeTypeName>uima.cas.Boolean</rangeTypeName>
+          <name>score</name>
+          <description>the numeric value of the score.</description>
+          <rangeTypeName>uima.cas.Double</rangeTypeName>
         </featureDescription>
       </features>
     </typeDescription>

@@ -13,7 +13,7 @@ import org.apache.uima.cas.impl.FeatureImpl;
 import org.apache.uima.cas.Feature;
 
 /** A token is a language unit that mostly refers to a word, which should be produced by a tokenizer.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * @generated */
 public class Token_Type extends ComponentAnnotation_Type {
   /** @generated */
@@ -96,6 +96,24 @@ public class Token_Type extends ComponentAnnotation_Type {
     ll_cas.ll_setStringValue(addr, casFeatCode_stem, v);}
     
   
+ 
+  /** @generated */
+  final Feature casFeat_tf;
+  /** @generated */
+  final int     casFeatCode_tf;
+  /** @generated */ 
+  public int getTf(int addr) {
+        if (featOkTst && casFeat_tf == null)
+      jcas.throwFeatMissing("tf", "edu.cmu.cs.lti.zhengzhl.Token");
+    return ll_cas.ll_getIntValue(addr, casFeatCode_tf);
+  }
+  /** @generated */    
+  public void setTf(int addr, int v) {
+        if (featOkTst && casFeat_tf == null)
+      jcas.throwFeatMissing("tf", "edu.cmu.cs.lti.zhengzhl.Token");
+    ll_cas.ll_setIntValue(addr, casFeatCode_tf, v);}
+    
+  
 
 
 
@@ -116,6 +134,10 @@ public class Token_Type extends ComponentAnnotation_Type {
  
     casFeat_stem = jcas.getRequiredFeatureDE(casType, "stem", "uima.cas.String", featOkTst);
     casFeatCode_stem  = (null == casFeat_stem) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_stem).getCode();
+
+ 
+    casFeat_tf = jcas.getRequiredFeatureDE(casType, "tf", "uima.cas.Integer", featOkTst);
+    casFeatCode_tf  = (null == casFeat_tf) ? JCas.INVALID_FEATURE_CODE : ((FeatureImpl)casFeat_tf).getCode();
 
   }
 }

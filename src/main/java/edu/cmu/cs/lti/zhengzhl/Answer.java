@@ -11,7 +11,7 @@ import org.apache.uima.jcas.tcas.Annotation;
 
 
 /** An answer is one possible answer for a question.
- * Updated by JCasGen Wed Sep 11 00:03:59 EDT 2013
+ * Updated by JCasGen Wed Sep 11 13:34:28 EDT 2013
  * XML source: /Users/hector/Documents/homeworks/11791/hw1-zhengzhl/src/main/resources/hw1-zhengzhl-typesystem.xml
  * @generated */
 public class Answer extends Annotation {
@@ -67,35 +67,17 @@ public class Answer extends Annotation {
 
   /** getter for score - gets score associated with this answer.
    * @generated */
-  public double getScore() {
+  public Score getScore() {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)
       jcasType.jcas.throwFeatMissing("score", "edu.cmu.cs.lti.zhengzhl.Answer");
-    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_score);}
+    return (Score)(jcasType.ll_cas.ll_getFSForRef(jcasType.ll_cas.ll_getRefValue(addr, ((Answer_Type)jcasType).casFeatCode_score)));}
     
   /** setter for score - sets score associated with this answer. 
    * @generated */
-  public void setScore(double v) {
+  public void setScore(Score v) {
     if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_score == null)
       jcasType.jcas.throwFeatMissing("score", "edu.cmu.cs.lti.zhengzhl.Answer");
-    jcasType.ll_cas.ll_setDoubleValue(addr, ((Answer_Type)jcasType).casFeatCode_score, v);}    
-   
-    
-  //*--------------*
-  //* Feature: isCorrect
-
-  /** getter for isCorrect - gets the boolean varaible indicating whether the answer is correct.
-   * @generated */
-  public boolean getIsCorrect() {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.cs.lti.zhengzhl.Answer");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect);}
-    
-  /** setter for isCorrect - sets the boolean varaible indicating whether the answer is correct. 
-   * @generated */
-  public void setIsCorrect(boolean v) {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.cs.lti.zhengzhl.Answer");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect, v);}    
+    jcasType.ll_cas.ll_setRefValue(addr, ((Answer_Type)jcasType).casFeatCode_score, jcasType.ll_cas.ll_getFSRef(v));}    
   }
 
     
